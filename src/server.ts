@@ -1,14 +1,17 @@
-import express, { Router } from "express";
+import express from "express";
+import { routes } from "./routes";
 
 const app = express();
 
-const routes = Router();
+app.use(express.json());
 
-routes.get("/rota", (request, response) => {
+/* const routes = Router(); */
+
+/* routes.get("/rota", (request, response) => {
   return response.status(200).json({
     message: "Ave Maria",
   });
-});
+}); */
 
 app.use(routes);
 

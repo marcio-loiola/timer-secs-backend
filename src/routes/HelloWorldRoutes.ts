@@ -6,6 +6,6 @@ const helloWorldRoutes = Router();
 
 const controller = new HelloWorldController();
 
-helloWorldRoutes.get("/rota", controller.show);
+helloWorldRoutes.get("/", controller.show);
 
 export { helloWorldRoutes };
